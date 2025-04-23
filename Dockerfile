@@ -19,4 +19,4 @@ FROM deploy-deps AS deploy
 COPY .eslintrc.json ./
 COPY --from=build /app/frontend/ ./frontend/
 
-ENTRYPOINT cd frontend/public && npx serve -p 5000
+ENTRYPOINT cd frontend/public && npx serve -p 80
